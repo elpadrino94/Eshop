@@ -1,0 +1,134 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- ================= HERO ================= -->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="container text-center text-white">
+      <h1 class="fw-bold">Les Meilleurs Produits en 2026</h1>
+      <p>Comparatifs, avis et bons plans</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAIN CONTENT ================= -->
+<div class="container-fluid main-content">
+  <div class="row">
+    <!-- SIDEBAR -->
+    <aside class="col-lg-3 col-md-4 sidebar">
+      <input
+        type="text"
+        class="form-control mb-3"
+        placeholder="Rechercher..."
+      />
+
+      <h5>Catégories</h5>
+      <ul class="list-group">
+        <li class="list-group-item">Casques</li>
+        <li class="list-group-item">Téléphones</li>
+        <li class="list-group-item">Accessoires</li>
+        <li class="list-group-item">Gaming</li>
+      </ul>
+    </aside>
+
+    <!-- PRODUCTS -->
+    <main class="col-lg-9 col-md-8">
+      <div class="row g-4">
+        <!-- Product Card -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card">
+            <img
+              src="https://via.placeholder.com/400x300"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Produit 1</h5>
+              <p class="card-text">Description courte du produit.</p>
+              <a href="#" class="btn btn-primary w-100">Voir le produit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card">
+            <img
+              src="https://via.placeholder.com/300x500"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Produit 2</h5>
+              <p class="card-text">Description courte du produit.</p>
+              <a href="#" class="btn btn-primary w-100">Voir le produit</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card product-card">
+            <img
+              src="https://via.placeholder.com/600x400"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Produit 3</h5>
+              <p class="card-text">Description courte du produit.</p>
+              <a href="#" class="btn btn-primary w-100">Voir le produit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- ================= REVIEWS ================= -->
+<section class="reviews-section">
+  <div class="container">
+    <h2 class="text-center mb-4">Avis Clients</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="review-card">
+          <p>"Excellent site, très utile !"</p>
+          <strong>- Alex</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review-card">
+          <p>"Produits bien comparés."</p>
+          <strong>- Sarah</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review-card">
+          <p>"Je recommande à 100%."</p>
+          <strong>- Karim</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODAL ================= -->
+<div class="modal fade" id="subscribeModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">S'abonner</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <input type="email" class="form-control" placeholder="Votre email" />
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary">S'abonner</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

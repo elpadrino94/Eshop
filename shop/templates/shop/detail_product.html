@@ -1,0 +1,63 @@
+{% extends "base.html" %} {% block content%}
+
+<!-- ================= PRODUCT DETAIL ================= -->
+<section class="product-detail container">
+  <div class="row g-5 align-items-center">
+    <!-- IMAGE -->
+    <div class="col-lg-5">
+      <div class="product-image">
+        <img src="https://via.placeholder.com/600x600" alt="Produit" />
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="col-lg-7">
+      <h1 class="product-title">Casque Gaming Pro X</h1>
+      <p class="product-description">
+        Ce casque gaming offre une excellente qualité sonore, un confort optimal
+        et une compatibilité multi-plateforme. Idéal pour les joueurs exigeants.
+      </p>
+
+      <ul class="product-features">
+        <li>✔ Son surround 7.1</li>
+        <li>✔ Micro antibruit</li>
+        <li>✔ Compatible PC / Console</li>
+      </ul>
+
+      <a href="#" class="btn btn-primary btn-lg mt-3">
+        Voir l’offre sur Amazon
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMMENTS ================= -->
+<section class="comments-section">
+  <div class="container">
+    <h3 class="mb-4">Avis des utilisateurs</h3>
+
+    <!-- Comment -->
+    <div class="comment">
+      <strong>Alex</strong>
+      <p>Très bon casque, confortable et son impeccable.</p>
+    </div>
+
+    <div class="comment">
+      <strong>Sarah</strong>
+      <p>Bon rapport qualité/prix, je recommande.</p>
+    </div>
+
+    <!-- Add comment -->
+    <div class="comment-form mt-4">
+      <h5>Laisser un avis</h5>
+      <input type="text" class="form-control mb-2" placeholder="Votre nom" />
+      <textarea
+        class="form-control mb-2"
+        rows="3"
+        placeholder="Votre commentaire"
+      ></textarea>
+      <button class="btn btn-secondary">Envoyer</button>
+    </div>
+  </div>
+</section>
+{% endblock %}
